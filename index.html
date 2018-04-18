@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Calendar</title>
+        <script type="text/javascript" src="dist/bundle.js"></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel='stylesheet' href='dist/style.css'>
+        
+    </head>
+    <body>
+        <div class='main-container'>
+        <header class='nav-panel'>
+            <div type='button' class='panel-button nav-item' >Добавить</div>
+            <div type='button' class='panel-button nav-item' onclick='fillCalendar((new Date()).getMonth())' >Обновить</div>
+            <div class='nav-item nav-search'>
+                <span class='fa fa-search'></span>
+                <input type='search' placeholder='События, дата или участники' >
+            </div>
+        </header>
+        <div class='app-container'>
+            <div class='arrow-panel'>
+                
+                <div class='fa fa-caret-left arrow' onclick="showPrevMonth()"></div>
+                <span class="month-year">Март 2013</span>
+                <div class='fa fa-caret-right arrow' onclick="showNextMonth()"></div>
+                <div class='today-title'>Сегодня</div>
+            </div>
+            
+        </div>
+    </div>
+    </body>
+</html>

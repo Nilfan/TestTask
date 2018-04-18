@@ -1,0 +1,98 @@
+html, body, .main-container {
+  margin: 0;
+  height: 100%;
+  font-family: Verdana, Courier, serif;
+  font-size: 15px; }
+
+.main-container {
+  display: grid;
+  grid-column: 1;
+  grid-template-rows: 2fr 15fr; }
+header {
+  min-height: 40px;
+  width: 100%;
+  background-color: #eeeeee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-top: 4%; }
+
+.nav-item {
+  display: inline-block; }
+
+.panel-button {
+  padding: 7px 10px;
+  background-color: #0173cd;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer; }
+  .panel-button:first-child {
+    margin-left: 30px; }
+
+.nav-search {
+  float: right;
+  margin-right: 5px; }
+
+.nav-search input {
+  width: 250px;
+  height: 25px;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: white;
+  padding: 3px; }
+  .nav-search input::placeholder {
+    color: #ddd; }
+.app-container {
+  height: 85%; }
+
+.arrow {
+  display: flex;
+  height: 5px;
+  width: 5px;
+  font-size: 15px;
+  padding: 5px;
+  border: 0.5px solid rgba(136, 136, 136, 0.5);
+  align-items: center;
+  color: #888;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.today-title {
+  display: flex;
+  height: 5px;
+  margin-left: 10px;
+  padding: 6px;
+  border: 0.5px solid rgba(136, 136, 136, 0.5);
+  align-items: center;
+  color: #888;
+  border-radius: 4px; }
+  .today-title:hover {
+    background: #eee;
+    cursor: pointer; }
+
+.arrow-panel {
+  display: flex;
+  align-items: center;
+  margin: 10px 60px; }
+
+.app-content {
+  display: grid;
+  padding: 0px 60px 20px 60px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100%; }
+
+.calendar-ceil {
+  color: #aaa;
+  background-color: white;
+  border: 0.1px solid #ccc;
+  height: auto;
+  padding: 10px 10px; }
+  .calendar-ceil:hover {
+    color: #111; }
+
+.active-ceil {
+  color: #666; }
+
+.month-year {
+  font-size: 18px;
+  margin: 5px; }

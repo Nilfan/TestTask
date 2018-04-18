@@ -1,0 +1,68 @@
+.app-container{
+    height: 85%;
+}
+
+.arrow{
+    display: flex;
+    height: 5px;
+    width: 5px;
+    font-size: 15px;
+    padding: 5px;
+    border: 0.5px solid rgba(136, 136, 136, 0.5);
+    align-items: center;
+    color: #888;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.today-title {
+    display: flex;
+    height: 5px;
+    margin-left: 10px;
+    padding: 6px;
+    border: 0.5px solid rgba(136, 136, 136, 0.5);
+    align-items: center;
+    color: #888;
+    border-radius: 4px;
+    &:hover{
+        background: #eee;
+        cursor: pointer;
+    }
+}
+
+
+.arrow-panel{
+    display:flex;
+    align-items:center;
+    margin: 10px 60px;
+}
+
+.app-content {
+    display: grid;
+    padding: 0px 60px 20px 60px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+}
+
+
+.calendar-ceil{
+    color: #aaa;
+    background-color: white; 
+    border: 0.1px solid #ccc; 
+    height: auto;
+    padding: 10px 10px;
+    &:hover{
+        color: #111;
+    }
+}
+
+.active-ceil{
+    color: #666;
+}
+
+
+.month-year {
+    font-size: 18px;
+    margin:5px;
+}

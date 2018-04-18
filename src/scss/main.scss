@@ -1,0 +1,12 @@
+html, body, .main-container{
+    margin: 0;
+    height: 100%;
+    font-family: Verdana, Courier, serif;
+    font-size:15px;
+}
+
+.main-container{
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: 2fr 15fr;
+}

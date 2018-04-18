@@ -1,0 +1,44 @@
+header{
+    min-height: 40px;
+    width: 100%;
+    background-color: #eeeeee;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-top: 4%;
+}
+
+.nav-item{
+    display: inline-block;
+}
+
+
+.panel-button{
+    padding: 7px 10px;
+    background-color: rgb(1,115,205);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    &:first-child{
+        margin-left: 30px;
+    }
+}
+
+
+.nav-search{
+    float: right;
+    margin-right: 5px;
+}
+
+
+.nav-search input{
+    width: 250px;
+    height:25px;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+    padding: 3px;
+    &::placeholder{
+        color: #ddd;
+    }
+    
+}
